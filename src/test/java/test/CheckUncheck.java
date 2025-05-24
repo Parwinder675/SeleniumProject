@@ -33,11 +33,11 @@ public class CheckUncheck {
 		
 
 		// Click Checkbox1
-		WebElement CheckBox1 = driver.findElement(By.xpath("//*[@id='checkboxes']"));
+		WebElement CheckBox1 = driver.findElement(By.xpath("/*[@id='checkboxes']/input[1]\n"));
 		CheckBox1.click();
 
 		// Uncheck Checkbox2
-		WebElement CheckBox2 = driver.findElement(By.xpath("//*[@id='checkboxes']"));
+		WebElement CheckBox2 = driver.findElement(By.xpath("//*[@id=‘checkboxes’]/input[2]"));
 		CheckBox2.click();
 
 	}
