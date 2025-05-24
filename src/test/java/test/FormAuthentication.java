@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class MyTest {
+public class FormAuthentication {
 
 	@Test
 	public static void test() {
@@ -29,7 +29,7 @@ public class MyTest {
 
 		// fill username
 		WebElement usernameField = driver.findElement(By.xpath("//*[@id='username']"));
-		usernameField.sendKeys("tomsimth");
+		usernameField.sendKeys("tomsmith");
 
 		// fill password
 		WebElement passwordField = driver.findElement(By.xpath("//*[@id='password']"));
