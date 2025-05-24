@@ -29,16 +29,15 @@ public class CheckUncheck {
 		// Verify Heading Checkboxes
 		WebElement VerifyHeading = driver.findElement(By.xpath("//*[@id='content']/div/h3"));
 		String textMessage = VerifyHeading.getAccessibleName();
-		Assert.assertEquals(VerifyHeading, "Checkboxes");
-		
+		Assert.assertEquals(textMessage, "Checkboxes");
 
 		// Click Checkbox1
-		WebElement CheckBox1 = driver.findElement(By.xpath("/*[@id='checkboxes']/input[1]\n"));
+		WebElement CheckBox1 = driver.findElement(By.xpath("//*[@id='checkboxes']/input[1]"));
 		CheckBox1.click();
 
 		// Uncheck Checkbox2
-		WebElement CheckBox2 = driver.findElement(By.xpath("//*[@id=‘checkboxes’]/input[2]"));
+		WebElement CheckBox2 = driver.findElement(By.xpath("//*[@id='checkboxes']/input[2]"));
 		CheckBox2.click();
-
+		driver.quit();
 	}
 }
